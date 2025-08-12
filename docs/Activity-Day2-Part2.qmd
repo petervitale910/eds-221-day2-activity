@@ -1,0 +1,15 @@
+---
+title: "Activity Part 2"
+format: html
+editor: visual
+execute: 
+  warning: false
+---
+
+#### Setup 
+```{r}
+pacman::p_load("tidyverse", "here", "janitor")
+
+
+```
+

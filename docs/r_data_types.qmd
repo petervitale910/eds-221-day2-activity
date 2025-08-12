@@ -1,0 +1,80 @@
+---
+title: "r_data_types"
+format: html
+editor: visual
+---
+
+Ok First things first everything is in *base*
+### Part 1
+## Making Vectors
+# Vector 1
+```{r}
+#Make vec1 and print it
+vec_1 <- c(2, 5, 9, 10, 8, 12, 1, 0);vec_1 
+
+#Lets find the class and vector
+class(vec_1)
+typeof(vec_1)
+
+#ok lets grab the 3rd element and store it 
+
+vec_1_e3 <- vec_1[3]
+
+#and the 1st
+
+vec_1_e1 <- vec_1[1]
+
+#and the 5th - 7th 
+
+vec_1_e5to7 <- vec_1[5:7]
+ 
+#lets set vec_1 to characters and see if it makes them letters
+vec_1_char <- as.character(vec_1)
+
+#it doesnt it puts them in quotes lmao
+```
+#Vector 2
+
+This needs to have named elements
+
+```{r}
+vec_2 <- c(town = "santa barbara", location = "Rincon", swell = "south"); vec_2
+
+#Ok lets find its class 
+
+class(vec_2)
+
+#And the length 
+
+length(vec_2)
+#3 long
+
+#Lets store the second element 
+vec_2_e2 <- vec_2[2]; vec_2_e2
+
+#Nice
+```
+
+#Data frame
+
+Making df1 
+
+```{r}
+df_1 <- data.frame(region = c("A", "B", "A", "D"), species = c("Otter", "Great White", "Sea Lion", "gray whale"), 
+                   count = c(12, 2, 36, 6)); df_1
+
+#Lets find the class of the df
+class(df_1)
+#Dataframe DUH
+
+#What about species
+
+df_1$species
+
+#Lets find max count
+
+max_count <- max(df_1$count); max_count
+
+```
+
+### Part 2
